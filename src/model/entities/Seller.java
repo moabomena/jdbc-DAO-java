@@ -3,20 +3,20 @@ package model.entities;
 import java.io.Serializable;
 import java.util.Date;
 
-public class Seller implements Serializable{
-	
+public class Seller implements Serializable {
+
 	private static final long serialVersionUID = 1L;
-	
+
 	private Integer id;
 	private String name;
 	private String email;
 	private Date birthDate;
 	private Double salary;
-	
+
 	private Department department;
-	
+
 	public Seller() {
-		
+
 	}
 
 	public Seller(Integer id, String name, String email, Date birthDate, Double salary, Department department) {
@@ -106,8 +106,5 @@ public class Seller implements Serializable{
 		return "Seller [id=" + id + ", name=" + name + ", email=" + email + ", birthDate=" + birthDate + ", salary="
 				+ salary + ", department=" + department + "]";
 	}
-	
-	
-	
 
 }
